@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d25">
+  <meta name="description" content="Blackhole01 presenta una propuesta de ingeniería para explorar el potencial de la energía solar fotovoltaica en espacios educativos.">
+  <title>Blackhole01 | Energía solar inteligente</title>
+  <style>
+    :root{
+      --bg:#080d25; --bg2:#0d1638; --panel:#111d43; --white:#f7f9ff;
+      --muted:#b9c7e6; --blue:#3b82f6; --cyan:#22d3ee; --purple:#a855f7;
+      --line:rgba(147,177,255,.2); --glow:rgba(59,130,246,.24);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 78% 10%,rgba(88,55,190,.22),transparent 32%),radial-gradient(ellipse at 8% 55%,rgba(0,168,255,.13),transparent 34%),var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(8,13,37,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}
+    .brand-mark{width:44px;height:44px;flex:none}
+    .brand small{display:block;color:#9eb5df;font-size:10px;letter-spacing:2px;font-weight:600}
+    .navlinks{display:flex;align-items:center;gap:28px;color:#d7e2ff;font-size:14px}
+    .navlinks a:hover{color:var(--cyan)}
+    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:11px 19px;font-weight:700;font-size:14px;transition:.2s}
+    .nav-cta,.btn.primary{background:linear-gradient(100deg,var(--blue),var(--purple));box-shadow:0 8px 28px var(--glow)}
+    .nav-cta:hover,.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+    .hero{padding:88px 0 74px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:45px;min-height:590px}
+    .eyebrow{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+    h1{font-size:clamp(42px,6vw,68px);line-height:1.04;letter-spacing:-2.5px;margin:18px 0}
+    h1 span{background:linear-gradient(90deg,#fff 12%,#77dfff 55%,#bd8aff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{font-size:18px;color:var(--muted);max-width:590px;margin:0 0 28px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}
+    .btn.secondary{border:1px solid rgba(146,178,255,.42);background:rgba(255,255,255,.04)}
+    .hero-art{position:relative;display:grid;place-items:center;min-height:390px}
+    .orbital{width:min(100%,440px);aspect-ratio:1;position:relative;display:grid;place-items:center;filter:drop-shadow(0 0 34px rgba(80,90,255,.35))}
+    .halo{position:absolute;width:70%;height:70%;border-radius:50%;background:radial-gradient(circle,transparent 39%,rgba(45,204,255,.95) 42%,rgba(135,77,255,.9) 47%,rgba(29,72,190,.2) 55%,transparent 66%);box-shadow:0 0 50px rgba(82,103,255,.42)}
+    .hole{position:absolute;width:37%;height:37%;border-radius:50%;background:#02040d;box-shadow:0 0 35px 14px rgba(3,5,18,.9),inset 0 0 20px #000}
+    .ring{position:absolute;width:100%;height:34%;border:9px solid transparent;border-top-color:#58dfff;border-bottom-color:#9b55ff;border-radius:50%;transform:rotate(-19deg);filter:drop-shadow(0 0 10px #526dff)}
+    .ring:after{content:"";position:absolute;inset:8px -5px;border:2px solid rgba(94,201,255,.6);border-radius:50%}
+    .star{position:absolute;color:#8eeaff;text-shadow:0 0 14px #35caff;font-size:22px}
+    .s1{top:13%;left:15%}.s2{top:24%;right:10%;font-size:15px}.s3{bottom:17%;left:12%;font-size:16px}.s4{bottom:12%;right:18%}
+    .art-caption{position:absolute;bottom:4px;color:#9fb4df;font-size:12px;letter-spacing:2px;text-transform:uppercase}
+    .section{padding:76px 0;border-top:1px solid var(--line)}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 38px}
+    h2{font-size:clamp(29px,4vw,42px);line-height:1.15;margin:10px 0 12px;letter-spacing:-1px}
+    .section-head p,.muted{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{padding:25px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,rgba(24,39,83,.8),rgba(13,21,51,.72));box-shadow:0 15px 40px rgba(0,0,0,.12)}
+    .icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(34,211,238,.2),rgba(168,85,247,.25));color:#8ceaff;font-size:22px;margin-bottom:15px}
+    .card h3{margin:0 0 8px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .project{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+    .project-panel{border:1px solid var(--line);border-radius:22px;padding:28px;background:linear-gradient(145deg,rgba(24,39,83,.85),rgba(13,21,51,.8))}
+    .stat{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--line);color:var(--muted);font-size:14px}
+    .stat strong{color:#fff}
+    .quote{font-size:clamp(25px,3vw,34px);font-weight:800;line-height:1.2;margin:0 0 15px}
+    .quote span{color:var(--cyan)}
+    .contact{text-align:center;padding:50px 25px;border:1px solid var(--line);border-radius:24px;background:radial-gradient(ellipse at 50% 0,rgba(111,75,220,.22),transparent 65%),rgba(16,28,65,.7)}
+    footer{padding:28px 0;color:#92a7d1;font-size:12px;border-top:1px solid var(--line)}
+    .foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center;padding:65px 0 50px;gap:10px}.lead{margin-left:auto;margin-right:auto}.actions{justify-content:center}.hero-art{min-height:320px}.orbital{max-width:340px}.cards{grid-template-columns:1fr}.project{grid-template-columns:1fr}.navlinks{gap:12px}.navlinks a:not(.nav-cta){display:none}}
+    @media(max-width:420px){.wrap{width:min(100% - 28px,1120px)}.nav{height:68px}.brand{font-size:14px}.brand-mark{width:38px;height:38px}.nav-cta{padding:9px 12px;font-size:12px}h1{letter-spacing:-1.5px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Blackhole01, inicio">
+      <svg class="brand-mark" viewBox="0 0 100 100" role="img" aria-label="Logo de agujero negro">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22d3ee"/><stop offset=".55" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+        <circle cx="50" cy="50" r="46" fill="#080d25" stroke="url(#g)" stroke-width="3"/>
+        <ellipse cx="50" cy="50" rx="43" ry="15" fill="none" stroke="url(#g)" stroke-width="7" transform="rotate(-20 50 50)"/>
+        <circle cx="50" cy="50" r="22" fill="none" stroke="#65ddff" stroke-width="5"/>
+        <circle cx="50" cy="50" r="14" fill="#02040d"/>
+        <path d="M18 36 Q50 12 82 36" fill="none" stroke="#a855f7" stroke-width="2" opacity=".8"/>
+      </svg>
+      <span>BLACKHOLE01<small>INGENIERÍA · ENERGÍA · INNOVACIÓN</small></span>
+    </a>
+    <nav class="navlinks" aria-label="Navegación principal">
+      <a href="#proyecto">El proyecto</a><a href="#solucion">La solución</a><a class="nav-cta" href="#contacto">Conocer más</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="wrap hero" id="inicio">
+    <div>
+      <div class="eyebrow">El laboratorio de ideas</div>
+      <h1>La energía del futuro comienza con <span>una idea.</span></h1>
+      <p class="lead">Exploramos cómo la ingeniería eléctrica y la tecnología fotovoltaica pueden transformar el consumo energético de los espacios educativos.</p>
+      <div class="actions">
+        <a class="btn primary" href="#proyecto">Descubrir el proyecto&nbsp; →</a>
+        <a class="btn secondary" href="#solucion">Nuestra propuesta</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-label="Ilustración de un agujero negro con anillos orbitales">
+      <div class="orbital">
+        <span class="star s1">✦</span><span class="star s2">✧</span><span class="star s3">✦</span><span class="star s4">✧</span>
+        <div class="halo"></div><div class="hole"></div><div class="ring"></div>
+      </div>
+      <div class="art-caption">Blackhole01 · Explora nuevas posibilidades</div>
+    </div>
+  </section>
+
+  <section class="section" id="proyecto">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Situación problema · TE1020</div>
+        <h2>Ingeniería aplicada a la energía solar</h2>
+        <p>Una propuesta académica para analizar el consumo eléctrico de un aula y estudiar cómo podría abastecerse mediante un sistema fotovoltaico.</p>
+      </div>
+      <div class="project">
+        <div>
+          <p class="quote">Del análisis de circuitos a una solución <span>energética inteligente.</span></p>
+          <p class="muted">Este proyecto integra conceptos de voltaje, corriente, potencia, energía y compatibilidad eléctrica para construir una herramienta de dimensionamiento y cotización preliminar.</p>
+          <p class="muted">La meta es comunicar los resultados con claridad, mostrar los supuestos del cálculo y fundamentar la selección de los componentes.</p>
+        </div>
+        <div class="project-panel">
+          <div class="stat"><span>Área de aplicación</span><strong>Aula escolar</strong></div>
+          <div class="stat"><span>Tecnología</span><strong>Fotovoltaica</strong></div>
+          <div class="stat"><span>Enfoque</span><strong>Análisis eléctrico</strong></div>
+          <div class="stat"><span>Desarrollo</span><strong>Simulador web</strong></div>
+          <div class="stat" style="border:0"><span>Responsable</span><strong>Blackhole01</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="solucion">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Nuestra propuesta</div>
+        <h2>¿Qué vamos a desarrollar?</h2>
+        <p>Una herramienta que convierta los datos de consumo en información útil para evaluar una alternativa solar.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="icon">⌁</div><h3>Analizar el consumo</h3><p>Registrar equipos, potencia y horas de uso para estimar la demanda energética del aula.</p></article>
+        <article class="card"><div class="icon">☀</div><h3>Dimensionar el sistema</h3><p>Estudiar paneles solares, configuraciones eléctricas y compatibilidad de los componentes.</p></article>
+        <article class="card"><div class="icon">▤</div><h3>Comunicar resultados</h3><p>Organizar una propuesta preliminar con componentes, costos estimados y consideraciones técnicas.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="contact" id="contacto">
+        <div class="eyebrow">Blackhole01</div>
+        <h2>Explora. Aprende. Transforma.</h2>
+        <p class="muted">La innovación comienza cuando hacemos las preguntas correctas y comprobamos cada resultado.</p>
+        <a class="btn primary" href="#inicio">Volver al inicio ↑</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 Blackhole01 · Proyecto académico de Análisis de Circuitos Eléctricos.</span>
+    <span>Propuesta preliminar con fines educativos; no sustituye un proyecto ejecutivo.</span>
+  </div>
+</footer>
+</body>
+</html>

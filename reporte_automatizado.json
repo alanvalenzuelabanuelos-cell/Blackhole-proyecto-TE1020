@@ -1,0 +1,257 @@
+{
+  "passed": 50,
+  "total": 50,
+  "errors": [],
+  "checks": [
+    {
+      "test": "Cinco módulos disponibles",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Ruta #clasificacion",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Ruta #actividad",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Ruta #conversion",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Ruta #matriz",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Ruta #comparador",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Ruta #conciencia",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Ruta #reflexion",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Ruta #tx-indicadores",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Ruta #tx-sistemas",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Ruta #tx-simulador",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Ruta #tx-fuentes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Ruta #dist-indicadores",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Ruta #dist-red",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Ruta #dist-transformador",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Ruta #dist-documentos",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Clasificador 15",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "20 fichas documentadas",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Comparador recurso con datos",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Gráfica de generación construida",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Filtro año generación reacciona",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Restablecer generación",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Corriente trifásica 100MW/230kV",
+      "ok": true,
+      "detail": "251.02"
+    },
+    {
+      "test": "Trifásico responde a parámetros",
+      "ok": true,
+      "detail": "(251.02, 502.04)"
+    },
+    {
+      "test": "Reinicio transmisión",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Transformador 230 a 23 V",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Transformador preajuste elevador",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Filtro hallazgos transmisión 5",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Restablecer hallazgos 20",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Mapa CFE distribuido localmente",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Mapa CENACE oficial enlazado",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Mapa SENER/SEMARNAT solicitado",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Cálculo de carga 1.2 kWh/día",
+      "ok": true,
+      "detail": "1.2 kWh/día"
+    },
+    {
+      "test": "Calcular dimensionamiento sin catálogo",
+      "ok": true,
+      "detail": "Dimensionamiento preliminar · no es cotización\nConsumo diario\n1.2 kWh/día\nPotencia FV mínima\n0.3 kWp\nPaneles estimados\n1 × 400 Wp\nPotencia resultante\n0.4 kWp\nGeneración estimada/día\n1.6 kWh\nGeneración estimada/año\n584 kW"
+    },
+    {
+      "test": "Cálculo de paneles esperados: 1",
+      "ok": true,
+      "detail": "Dimensionamiento preliminar · no es cotización\nConsumo diario\n1.2 kWh/día\nPotencia FV mínima\n0.3 kWp\nPaneles estimados\n1 × 400 Wp\nPotencia resultante\n0.4 kWp\nGeneración estimada/día\n1.6 kWh\nGeneración estimada/año\n584 kWh\n\nDatos proporcionados: HSP 5 h/día; PR 0.8; origen potencia: Hipótesis didácti"
+    },
+    {
+      "test": "Botón original orienta a cálculo básico",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "PDF sigue inhabilitado sin fichas",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Catálogo panel registrado",
+      "ok": true,
+      "detail": "Componente guardado y validado. Revisa sus fuentes comerciales antes de utilizarlo."
+    },
+    {
+      "test": "Catálogo inversor registrado",
+      "ok": true,
+      "detail": "Componente guardado y validado. Revisa sus fuentes comerciales antes de utilizarlo."
+    },
+    {
+      "test": "Cálculo comercial con catálogo válido",
+      "ok": true,
+      "detail": "Propuesta de dimensionamiento · cálculo preliminar\nPotencia FV requerida\n0.3 kWp\nPotencia FV del arreglo\n0.4 kWp\nPaneles propuestos\n1 unidades\nSerie × paralelo\n1 × 1\nGeneración teórica/día\n1.6 kWh\nGeneración teórica/año\n584 kWh\n\nPotencia pico teórica del aula: 200 W; inversor: 1,"
+    },
+    {
+      "test": "Presupuesto desde catálogo",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Descarga de PDF habilitada",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "PDF generado y descargable",
+      "ok": true,
+      "detail": "Blackhole01_Propuesta_Solar.pdf"
+    },
+    {
+      "test": "PDF íntegro de varias páginas",
+      "ok": true,
+      "detail": "6"
+    },
+    {
+      "test": "Vista móvil sin desbordamiento cotizador",
+      "ok": true,
+      "detail": "390"
+    },
+    {
+      "test": "Vista móvil sin desbordamiento generacion",
+      "ok": true,
+      "detail": "390"
+    },
+    {
+      "test": "Vista móvil sin desbordamiento transmision",
+      "ok": true,
+      "detail": "390"
+    },
+    {
+      "test": "Vista móvil sin desbordamiento distribucion",
+      "ok": true,
+      "detail": "390"
+    },
+    {
+      "test": "Vista móvil sin desbordamiento sabias",
+      "ok": true,
+      "detail": "390"
+    },
+    {
+      "test": "No se registraron excepciones JS",
+      "ok": true,
+      "detail": "[]"
+    }
+  ]
+}
